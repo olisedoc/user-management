@@ -26,7 +26,7 @@ function createWindow() {
     );
   }
 }
-
+app.commandLine.appendSwitch('--no-sandbox');
 app.whenReady().then(createWindow);
 
 app.on("window-all-closed", () => {
